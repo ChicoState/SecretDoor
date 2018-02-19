@@ -2,17 +2,14 @@
  * SecretDoor.cpp
  *
  * Author: Kevin Buffardi
- * Date: Oct 8, 2015
+ * Date: Feb 18, 2018
  * Description: Method and member definitions for SecretDoor class;
  *              see .h file for class description
  */
 
 #include "SecretDoor.h"
-#include <iostream>
 #include <ctime>
 #include <cstdlib>
-
-using namespace std;
 
 /*
  * SecretDoor()

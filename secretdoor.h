@@ -15,8 +15,6 @@
 #ifndef SECRETDOOR_H_
 #define SECRETDOOR_H_
 
-using namespace std;
-
 class SecretDoor
 {
 	private:
