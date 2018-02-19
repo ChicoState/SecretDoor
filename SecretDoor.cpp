@@ -11,6 +11,7 @@
 #include <ctime>
 #include <cstdlib>
 
+static bool seed_once = false;
 /*
  * SecretDoor()
  *
@@ -18,6 +19,11 @@
  */
 SecretDoor::SecretDoor()
 {
+	if(!seed_once)
+	{
+		srand(time(NULL)); 
+		seed_once=true;
+	}
 	guesses = 0;
 	open = ' ';
 	won = false;
