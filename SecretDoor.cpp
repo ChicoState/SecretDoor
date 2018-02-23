@@ -24,11 +24,22 @@ SecretDoor::SecretDoor()
 		srand(time(NULL)); 
 		seed_once=true;
 	}
+	newGame();
+}
+
+/*
+ * newGame()
+ *
+ * Begins a new game with a new door selection and cleared guesses 
+ */
+SecretDoor::newGame()
+{
 	guesses = 0;
 	open = ' ';
 	won = false;
 	winner = randDoor();
 }
+
 
 void SecretDoor::guessDoorA(){guessDoor('A');}
 void SecretDoor::guessDoorB(){guessDoor('B');}
