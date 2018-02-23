@@ -32,7 +32,7 @@ SecretDoor::SecretDoor()
  *
  * Begins a new game with a new door selection and cleared guesses 
  */
-SecretDoor::newGame()
+void SecretDoor::newGame()
 {
 	guesses = 0;
 	open = ' ';
